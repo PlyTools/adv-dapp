@@ -1,4 +1,4 @@
-import { Bot } from 'lucide-react';
+import { Bot, Clock, HelpCircle } from 'lucide-react';
 
 function App() {
   return (
@@ -6,12 +6,15 @@ function App() {
       <div className="w-full max-w-4xl">
         {/* Header Section */}
         <div className="text-center mb-8">
+          {/* Bot Icon */}
           <div className="inline-flex items-center justify-center p-2 mb-4 rounded-full bg-white/30 backdrop-blur-sm">
             <Bot className="w-8 h-8 text-indigo-600" />
           </div>
+          {/* Title */}
           <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 mb-2">
             Meet Liam
           </h1>
+          {/* Description */}
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Your AI voice assistant powered by OpenAI. Have natural conversations and get help with anything you need.
           </p>
@@ -46,7 +49,7 @@ function App() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="p-4 rounded-xl bg-white/50 backdrop-blur-sm hover:bg-white/60 transition-all"
+                  className="p-4 rounded-xl bg-white/50 backdrop-blur-sm hover:bg-white/90 transition-all"
                 >
                   <div className="text-indigo-600 mb-2">{feature.icon}</div>
                   <h3 className="font-semibold text-gray-800 mb-1">{feature.title}</h3>
@@ -68,14 +71,14 @@ const features = [
     description: "Engage in fluid, context-aware discussions with advanced AI understanding."
   },
   {
-    icon: <Bot className="w-6 h-6" />,
-    title: "Voice Recognition",
-    description: "Crystal-clear voice recognition for seamless verbal communication."
-  },
-  {
-    icon: <Bot className="w-6 h-6" />,
+    icon: <Clock className="w-6 h-6" />,
     title: "24/7 Assistance",
     description: "Get help anytime with your AI assistant always ready to support you."
+  },
+  {
+    icon: <HelpCircle className="w-6 h-6" />,
+    title: "Expert Support",
+    description: "Receive expert guidance and assistance tailored to your needs."
   }
 ];
 
