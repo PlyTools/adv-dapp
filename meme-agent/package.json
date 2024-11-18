@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.48.0"
+  },
+  "name": "x-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
