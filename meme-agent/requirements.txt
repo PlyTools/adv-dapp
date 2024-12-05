@@ -1,0 +1,8 @@
+Flask==2.2.5
+langchain==0.3.9
+langchain_community==0.3.9
+langchain_openai==0.2.11
+py_solc_x==2.0.3
+python-dotenv==1.0.1
+tweepy==4.14.0
+web3==7.5.0
